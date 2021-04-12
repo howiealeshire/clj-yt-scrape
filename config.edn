@@ -1,0 +1,15 @@
+{:datomic-api-key  "5c82b41a-c04a-4edc-b7e1-dcfa75658859"}
+
+
+
+(def cfg {:server-type :peer-server
+          :access-key "myaccesskey"
+          :secret "mysecret"
+          :endpoint "localhost:8998"
+          :validate-hostnames false})
+
+{:port 8000
+ :database #profile {:prod "datomic:dev://localhost:4334/my-prod-db2"
+                     :test "datomic:dev://localhost:4334/my-test-db"
+                     :default "datomic:dev://localhost:4334/my-db"}
+ :known-users [{:name "Alice"} {:name "Bob"}]}

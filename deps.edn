@@ -1,0 +1,4 @@
+;; deps.edn
+{:deps { ,,, }
+ :aliases
+ {:test {:extra-deps {lambdaisland/kaocha {:mvn/version "1.0.829"}}}}}
